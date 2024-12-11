@@ -1,3 +1,4 @@
+#optimised
 def solveNQueens(n):
     def backtrack(row, cols, diags, anti_diags, current):
         if row == n:
