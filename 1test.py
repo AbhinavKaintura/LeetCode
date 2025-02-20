@@ -1,2 +1,0 @@
-print("Hlo")
-print("Abhi")
