@@ -1,6 +1,11 @@
 #solu2 using stack 
 #Time complexity: O(n)
 #Space complexity: O(n)
+#Approach:
+#1. Create a stack and push the first half of the string into the stack.
+#2. Compare the popped elements from the stack with the second half of the string.
+#3. If the elements are equal, continue the loop. If not, return False.
+#4. If the stack is empty, return True. Else, return False.
 class Solution:
     def isPalindrome(self, s:str) -> bool:
 
