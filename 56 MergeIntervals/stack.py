@@ -1,3 +1,8 @@
+# Difficulty: Medium
+#Approach: Sort the intervals based on the start time and then iterate through the intervals and merge them if they overlap
+#Time complexity: O(nlogn) where n is the number of intervals
+
+
 from typing import List 
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
