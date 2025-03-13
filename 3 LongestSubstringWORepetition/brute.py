@@ -6,7 +6,7 @@ class Solution:
 
         for i in range(n):
             for j in range(i, n):
-                if len(set(s[i:j+1])) == j-i+1:
+                if len(set(s[i:j+1])) == j-i+1: # if any element repeats the condition not holds true as in set there's no repetition 
                     max_length = max(max_length, j-i+1)
 
         return max_length

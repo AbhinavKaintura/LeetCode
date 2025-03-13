@@ -6,8 +6,8 @@ class Solution:
         for right in range(n):
 
             while s[right] in seen:
-                seen.remove(s[left])
-                left +=1
+                seen.remove(s[left])    # we are removing the left element from the seen set such that all the 
+                left +=1                # elements are removed till the current element so that the seen set is empty
             
             seen.add(s[right])
             max_length = max(max_length, right-left+1)
