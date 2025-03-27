@@ -1,0 +1,44 @@
+Let me break down the approaches and their optimization strategies:
+
+Brute Force Approach (findSubstring_bruteforce):
+
+Generate all possible permutations of words
+Time Complexity: O(n * m! * k), where n is string length, m is number of words, k is word length
+Very inefficient for large inputs
+Simple to understand but impractical for real-world use
+Generates all possible word combinations beforehand
+
+
+Sliding Window with Hash Map (findSubstring_sliding_window):
+
+Uses frequency counting of words
+Time Complexity: O(n * m * k), where n is string length, m is number of words, k is word length
+Checks each possible starting index
+Validates by tracking word frequencies
+More efficient than brute force
+Handles repeated words correctly
+
+
+Optimized Sliding Window (findSubstring_optimized):
+
+Most efficient approach
+Time Complexity: O(n * k), where n is string length, k is word length
+Key Optimizations:
+a) Only checks specific starting points based on word length
+b) Uses a sliding window technique
+c) Dynamically adjusts window based on word frequencies
+d) Reduces unnecessary iterations
+Handles edge cases like repeated words
+Minimizes redundant checks
+
+
+
+Key Optimization Strategies:
+
+Use of hash maps for frequency tracking
+Sliding window technique to reduce iterations
+Preprocessing word frequencies
+Early termination of invalid sequences
+Minimizing redundant computations
+
+The third approach is the most recommended due to its efficiency and ability to handle complex scenarios with minimal computational overhead.
