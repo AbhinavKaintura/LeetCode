@@ -1,3 +1,8 @@
+#include <iostream>
+#include <unordered_map>
+#include <string>
+using namespace std;
+
 class Solution {
     public:
         int lengthOfLongestSubstring(string s) {
@@ -20,3 +25,10 @@ class Solution {
             return maxLen;
         }
     };
+
+int main() {
+    string s = "abcabcbb";
+    Solution sol;
+    cout << "Answer: " << sol.lengthOfLongestSubstring(s) << endl;
+    return 0;
+}
