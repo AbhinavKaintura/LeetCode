@@ -1,3 +1,7 @@
+// Kadane's Algorithm
+// At each position, we make a choice: either start a new subarray at the current position or extend the existing subarray.
+// If adding the current element to our existing subarray makes the sum smaller than just the element itself, we start a new subarray.
+
 #include <iostream>
 #include <vector>
 using namespace std;
