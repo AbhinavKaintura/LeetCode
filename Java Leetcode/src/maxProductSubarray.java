@@ -1,4 +1,5 @@
-// src/App.java
+
+// 152 maxProductSubarray.java
 // You can rename 'Solution' to 'MaxProductFinder' if you prefer,
 // but the file name should match the public class name (App in this case)
 // if you want to keep the default App.java.
@@ -48,7 +49,7 @@ class Solution { // Renamed from Solution to MaxProductFinder or keep as Solutio
 
 // This is your main class to run the code.
 // The file should be named App.java
-public class App {
+public class maxProductSubarray{
     public static void main(String[] args) {
         Solution solver = new Solution(); // Create an instance of your Solution class
 
