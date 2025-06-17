@@ -1,7 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
+      {
+        "type": "java",
+        "name": "rotateArray",
+        "request": "launch",
+        "mainClass": "rotateArray",
+        "projectName": "Leetcode_c27e721"
+      },
       {
         "name": "Run C++",
         "type": "cppdbg",
@@ -12,7 +18,7 @@
         "cwd": "${fileDirname}",
         "environment": [],
         "externalConsole": true,
-        "MIMode": "gdb", // use "lldb" for mac, "gdb" for Linux, or "gdb"/"cppvsdbg" for Windows
+        "MIMode": "gdb",
         "setupCommands": [
           {
             "description": "Enable pretty-printing for gdb",
