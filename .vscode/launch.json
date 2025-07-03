@@ -3,6 +3,20 @@
     "configurations": [
       {
         "type": "java",
+        "name": "originNearest",
+        "request": "launch",
+        "mainClass": "originNearest",
+        "projectName": "Leetcode_c27e721"
+      },
+      {
+        "type": "java",
+        "name": "validSudoko",
+        "request": "launch",
+        "mainClass": "validSudoko",
+        "projectName": "Leetcode_c27e721"
+      },
+      {
+        "type": "java",
         "name": "rotateArray",
         "request": "launch",
         "mainClass": "rotateArray",
