@@ -1,3 +1,5 @@
+// Remove the nth node from the end of the list
+// Using double pointers to track the nth node as one of the them reaches to the null, then the other one is at n-1th node, so we just move the second node to the next node which is the node to be removed(slow.next).... and then remove the node by skipping the nth node.
 public class removeLastNNodeLL {
     public ListNode removeNthFromEnd(ListNode head, int n){
         ListNode slow = head, fast = head;
@@ -12,7 +14,7 @@ public class removeLastNNodeLL {
             fast = fast.next;
             slow = slow.next;
         }
-        slow.next = slow.next.next;
+        slow.next = slow.next.next; // Learning point: i was at the n-1 node, so to remove the nth node, i didn't do slow = slow.next.next as it would skip the node after the one to be removed. 
 
         return head;
     }
